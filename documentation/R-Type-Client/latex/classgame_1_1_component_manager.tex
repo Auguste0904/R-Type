@@ -1,0 +1,76 @@
+\hypertarget{classgame_1_1_component_manager}{}\doxysection{game\+::Component\+Manager Class Reference}
+\label{classgame_1_1_component_manager}\index{game::ComponentManager@{game::ComponentManager}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgame_1_1_component_manager_a43df2ee6f9d93bbf4bb1e2c97af93dce}{Component\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Component manager constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgame_1_1_component_manager_a40c83269f3778cac03d04ad79c247c46}{\+\_\+\+R\+E\+M\+O\+V\+E\+\_\+\+C\+O\+M\+P\+O\+N\+E\+N\+T\+\_\+\+E\+N\+T\+I\+TY}} (const game\+::int32 \&id)
+\begin{DoxyCompactList}\small\item\em Remove a component entity from component map. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgame_1_1_component_manager_a95fc18dfbd10ac79bdbd540bfd369d10}\label{classgame_1_1_component_manager_a95fc18dfbd10ac79bdbd540bfd369d10}} 
+{\footnotesize template$<$typename T $>$ }\\void {\bfseries add\+Component} (const std\+::pair$<$ game\+::int32, T $>$ \&component)
+\item 
+\mbox{\Hypertarget{classgame_1_1_component_manager_adf0c040b49b14d67bdf7ff0ab0f1931c}\label{classgame_1_1_component_manager_adf0c040b49b14d67bdf7ff0ab0f1931c}} 
+{\footnotesize template$<$typename T $>$ }\\void {\bfseries add\+Hash\+Component} (const std\+::size\+\_\+t \&hash\+\_\+type, const std\+::pair$<$ game\+::int32, T $>$ \&component)
+\item 
+\mbox{\Hypertarget{classgame_1_1_component_manager_a908b1aff1dc74f544409301209269595}\label{classgame_1_1_component_manager_a908b1aff1dc74f544409301209269595}} 
+void {\bfseries remove\+Hash\+Component} (const std\+::size\+\_\+t \&hash\+\_\+type, const game\+::int32 \&id)
+\item 
+\mbox{\Hypertarget{classgame_1_1_component_manager_ae264958a420a43b65fdea066cdc6f356}\label{classgame_1_1_component_manager_ae264958a420a43b65fdea066cdc6f356}} 
+{\footnotesize template$<$typename T $>$ }\\void {\bfseries remove\+Component} (const T \&type, const game\+::int32 \&id)
+\item 
+\mbox{\Hypertarget{classgame_1_1_component_manager_af9caa61b495ac1b45b1c6bbd24cfaad2}\label{classgame_1_1_component_manager_af9caa61b495ac1b45b1c6bbd24cfaad2}} 
+{\footnotesize template$<$typename T $>$ }\\std\+::vector$<$ std\+::pair$<$ game\+::int32, std\+::any $>$ $>$ \& {\bfseries get\+Components} (const T \&type)
+\item 
+\mbox{\Hypertarget{classgame_1_1_component_manager_a99808e035ba727b3cfc13141eb22a73f}\label{classgame_1_1_component_manager_a99808e035ba727b3cfc13141eb22a73f}} 
+std\+::vector$<$ std\+::pair$<$ game\+::int32, std\+::any $>$ $>$ \& {\bfseries get\+Hash\+Components} (const std\+::size\+\_\+t \&hash\+\_\+type)
+\item 
+void \mbox{\hyperlink{classgame_1_1_component_manager_afd9927777acab0193f429ad663a3de83}{\+\_\+\+C\+L\+E\+AR}} (void)
+\begin{DoxyCompactList}\small\item\em Clear component map. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgame_1_1_component_manager_a43df2ee6f9d93bbf4bb1e2c97af93dce}\label{classgame_1_1_component_manager_a43df2ee6f9d93bbf4bb1e2c97af93dce}} 
+\index{game::ComponentManager@{game::ComponentManager}!ComponentManager@{ComponentManager}}
+\index{ComponentManager@{ComponentManager}!game::ComponentManager@{game::ComponentManager}}
+\doxysubsubsection{\texorpdfstring{ComponentManager()}{ComponentManager()}}
+{\footnotesize\ttfamily game\+::\+Component\+Manager\+::\+Component\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Component manager constructor. 
+
+Create a component manager instance 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classgame_1_1_component_manager_afd9927777acab0193f429ad663a3de83}\label{classgame_1_1_component_manager_afd9927777acab0193f429ad663a3de83}} 
+\index{game::ComponentManager@{game::ComponentManager}!\_CLEAR@{\_CLEAR}}
+\index{\_CLEAR@{\_CLEAR}!game::ComponentManager@{game::ComponentManager}}
+\doxysubsubsection{\texorpdfstring{\_CLEAR()}{\_CLEAR()}}
+{\footnotesize\ttfamily void game\+::\+Component\+Manager\+::\+\_\+\+C\+L\+E\+AR (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Clear component map. 
+
+\mbox{\Hypertarget{classgame_1_1_component_manager_a40c83269f3778cac03d04ad79c247c46}\label{classgame_1_1_component_manager_a40c83269f3778cac03d04ad79c247c46}} 
+\index{game::ComponentManager@{game::ComponentManager}!\_REMOVE\_COMPONENT\_ENTITY@{\_REMOVE\_COMPONENT\_ENTITY}}
+\index{\_REMOVE\_COMPONENT\_ENTITY@{\_REMOVE\_COMPONENT\_ENTITY}!game::ComponentManager@{game::ComponentManager}}
+\doxysubsubsection{\texorpdfstring{\_REMOVE\_COMPONENT\_ENTITY()}{\_REMOVE\_COMPONENT\_ENTITY()}}
+{\footnotesize\ttfamily void game\+::\+Component\+Manager\+::\+\_\+\+R\+E\+M\+O\+V\+E\+\_\+\+C\+O\+M\+P\+O\+N\+E\+N\+T\+\_\+\+E\+N\+T\+I\+TY (\begin{DoxyParamCaption}\item[{const game\+::int32 \&}]{id }\end{DoxyParamCaption})}
+
+
+
+Remove a component entity from component map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & id of game instance \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+client/engine/include/ecs/component/Component\+Manager.\+hpp\item 
+client/engine/src/ecs/component/Component\+Manager.\+cpp\end{DoxyCompactItemize}

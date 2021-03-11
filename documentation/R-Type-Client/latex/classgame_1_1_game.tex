@@ -1,0 +1,588 @@
+\hypertarget{classgame_1_1_game}{}\doxysection{game\+::Game Class Reference}
+\label{classgame_1_1_game}\index{game::Game@{game::Game}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgame_1_1_game_ae9a8a06bcaeb4151094c15276e673711}{Game}} (const std\+::string \&title=\char`\"{}\char`\"{}, const std\+::string \&icon=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classgame_1_1_game}{Game}} engine constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classgame_1_1_entity_manager}{game\+::\+Entity\+Manager}} \& \mbox{\hyperlink{classgame_1_1_game_a05b78f42d370b50a427471b1e1fb6788}{entity\+Manager}} (void)
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{classgame_1_1_entity_manager}{Entity\+Manager}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classgame_1_1_component_manager}{game\+::\+Component\+Manager}} \& \mbox{\hyperlink{classgame_1_1_game_aca95638025e1dd8d6e172b5423389793}{component\+Manager}} (void)
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{classgame_1_1_component_manager}{Component\+Manager}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classgame_1_1_system_manager}{game\+::\+System\+Manager}} \& \mbox{\hyperlink{classgame_1_1_game_a201c9b4dd254eb8dc052645fe277968c}{system\+Manager}} (void)
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{classgame_1_1_system_manager}{System\+Manager}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgame_1_1_game_ae50724dfe9fd71926fdeda2b3b61d370}{scene}} (void(\&callback\+\_\+init)(void))
+\begin{DoxyCompactList}\small\item\em The scene function init any menu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgame_1_1_game_a80cccbace1f8ef9015cc6dbd91223196}{set\+Resolution}} (const sf\+::\+Vector2i \&resolution)
+\begin{DoxyCompactList}\small\item\em Set window resolution (width-\/height) \end{DoxyCompactList}\item 
+const sf\+::\+Vector2i \& \mbox{\hyperlink{classgame_1_1_game_a0212a73b22bde394552287b9e70017c1}{get\+Resolution}} (void) const
+\begin{DoxyCompactList}\small\item\em Get window resolution (width-\/height) \end{DoxyCompactList}\item 
+sf\+::\+Render\+Window $\ast$ \mbox{\hyperlink{classgame_1_1_game_a7b5c4819b91e4f814b257bef0dc9f3e5}{get\+Window}} (void)
+\begin{DoxyCompactList}\small\item\em Get the pointer of the window. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgame_1_1_game_ac05f4dbf06974c271aa8f0e62b56f3a8}{set\+Icon}} (const std\+::string \&icon)
+\begin{DoxyCompactList}\small\item\em Set an icon to the window. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{classgame_1_1_game_a960178f82767fe420465bc1c999cc4bf}{get\+Icon}} (void) const
+\begin{DoxyCompactList}\small\item\em Get active icon image path. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgame_1_1_game_ad636e3da58096b616670593de403cf44}{set\+Title}} (const std\+::string \&title)
+\begin{DoxyCompactList}\small\item\em Set a title to the window. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{classgame_1_1_game_a2cd1155160a9a207023fc7f0108918a5}{get\+Title}} (void) const
+\begin{DoxyCompactList}\small\item\em Get the active window title/name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgame_1_1_game_af2ea5cfb16408e1cd443c624a7e9faf8}{set\+Sound\+Volume}} (const game\+::uint8 \&volume)
+\begin{DoxyCompactList}\small\item\em Change the sound volume. \end{DoxyCompactList}\item 
+const game\+::uint8 \& \mbox{\hyperlink{classgame_1_1_game_a4254e74aa633d4ebd7179b0cfe379902}{get\+Sound\+Volume}} (void) const
+\begin{DoxyCompactList}\small\item\em Get active sound value, which stands for the audio volume. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgame_1_1_game_aea03a01725c93386e0268f143642734c}{set\+Music\+Volume}} (const game\+::uint8 \&volume)
+\begin{DoxyCompactList}\small\item\em Change the music volume. \end{DoxyCompactList}\item 
+const game\+::uint8 \& \mbox{\hyperlink{classgame_1_1_game_a26a728b0d67774373f5801d910c97c1b}{get\+Music\+Volume}} (void) const
+\begin{DoxyCompactList}\small\item\em Get active music value, which stands for the audio volume. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgame_1_1_game_a81af780fff7dc2908cbd0c0bd1522c39}{set\+Mouse\+Visible}} (const bool \&visible)
+\begin{DoxyCompactList}\small\item\em Set the mouse visible on the screen. \end{DoxyCompactList}\item 
+const bool \& \mbox{\hyperlink{classgame_1_1_game_a84b82af320b71ff12447d21bddf2372a}{is\+Mouse\+Visible}} (void) const
+\begin{DoxyCompactList}\small\item\em Check if the mouse is visible or not with a boolean type. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgame_1_1_game_ae50e50b5a74803be5cc676d77e088afb}{set\+Fullscreen}} (const bool \&fullscreen)
+\begin{DoxyCompactList}\small\item\em Set the screen resolution to fullscreen. \end{DoxyCompactList}\item 
+const bool \& \mbox{\hyperlink{classgame_1_1_game_aba06d48876e6b0763cec16cd08bd45a3}{is\+Fullscreen}} (void) const
+\begin{DoxyCompactList}\small\item\em Check if the window is windowed or not and return a true or false state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgame_1_1_game_a2f04c908ba219988f07b1182c4153df6}{set\+Framerate}} (const game\+::uint8 \&framerate)
+\begin{DoxyCompactList}\small\item\em Limit the framerate to a maximum fixed frequency. If a limit is set, the window will use a small delay after each call to display() to ensure that the current frame lasted long enough to match the framerate limit. S\+F\+ML will try to match the given limit as much as it can, but since it internally uses sf\+::sleep, whose precision depends on the underlying OS, the results may be a little unprecise as well (for example, you can get 65 F\+PS when requesting 60). \end{DoxyCompactList}\item 
+const game\+::uint8 \& \mbox{\hyperlink{classgame_1_1_game_a9aeeeabfe0b7fc3f274c591b2f12e39a}{get\+Framerate}} (void) const
+\begin{DoxyCompactList}\small\item\em Get framerate value as an unsigned 8-\/bit int. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgame_1_1_game_ab71b24c1d83f1a51403fecc242ed11c3}\label{classgame_1_1_game_ab71b24c1d83f1a51403fecc242ed11c3}} 
+void \mbox{\hyperlink{classgame_1_1_game_ab71b24c1d83f1a51403fecc242ed11c3}{close}} (void)
+\begin{DoxyCompactList}\small\item\em Close the window and destroy all the attached resources. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgame_1_1_game_ac872d608620ffcd98cbdbaf712ea2938}\label{classgame_1_1_game_ac872d608620ffcd98cbdbaf712ea2938}} 
+void {\bfseries play\+Music} (void)
+\item 
+\mbox{\Hypertarget{classgame_1_1_game_ae608de65cbef70a4585ac5d792841685}\label{classgame_1_1_game_ae608de65cbef70a4585ac5d792841685}} 
+void {\bfseries open\+Sound} (const std\+::string \&path\+Sound)
+\item 
+\mbox{\Hypertarget{classgame_1_1_game_a629dd91b34d349f8a944c1c1d2c7eb7f}\label{classgame_1_1_game_a629dd91b34d349f8a944c1c1d2c7eb7f}} 
+void {\bfseries play\+Sound} (void)
+\item 
+const bool \& \mbox{\hyperlink{classgame_1_1_game_ab17ae8618855a571f455d228921b400d}{is\+Closed}} (void) const
+\begin{DoxyCompactList}\small\item\em Check if the engine window is closed as a boolean value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgame_1_1_game_a7d3ac8812fb412a3001ed8f5ae4ebe06}{clear}} (const sf\+::\+Color \&color=sf\+::\+Color\+::\+Black)
+\begin{DoxyCompactList}\small\item\em Clear window with a specified color or not. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgame_1_1_game_ac74314502123e5726f0564b4debfa659}{load\+Library}} (const std\+::string \&lib)
+\begin{DoxyCompactList}\small\item\em The load\+Library function load the shared libraries given in paramter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgame_1_1_game_a23de6ddbec4e7fcf818becd7029f92b1}{unload\+Library}} (const std\+::string \&lib)
+\begin{DoxyCompactList}\small\item\em The unload\+Library function unload the shared libraries given in paramter. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgame_1_1_game_ab3ba9499bcc5f16d3d2d0c85caf42e78}\label{classgame_1_1_game_ab3ba9499bcc5f16d3d2d0c85caf42e78}} 
+void \mbox{\hyperlink{classgame_1_1_game_ab3ba9499bcc5f16d3d2d0c85caf42e78}{unload\+All\+Library}} (void)
+\begin{DoxyCompactList}\small\item\em The unload\+Library function unload all the shared libraries. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classgame_1_1_game_a845a6a6513fbf10c30bb1143ed6d7ef0}{get\+Key}} (const game\+::int32 \&key)
+\begin{DoxyCompactList}\small\item\em Get the key. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classgame_1_1_game_afc653db1bc836d69806cd508ebea028d}{get\+Mouse\+Click}} (void)
+\begin{DoxyCompactList}\small\item\em Get the mouse click. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classgame_1_1_game_a516252afeb6334ebfe2bd28ed7a439c4}{get\+Mouse\+Click\+Once}} (void)
+\begin{DoxyCompactList}\small\item\em Get the Mouse click. \end{DoxyCompactList}\item 
+game\+::int32 \mbox{\hyperlink{classgame_1_1_game_a243c45adca5fb4c78f5603085c2fca09}{get\+Last\+Key}} (void) const
+\begin{DoxyCompactList}\small\item\em Get the last key ascii. \end{DoxyCompactList}\item 
+game\+::int32 \mbox{\hyperlink{classgame_1_1_game_a51dd7396247e0d51f50fbf8acbb4a0df}{get\+Last\+Key\+Ascii}} (void) const
+\begin{DoxyCompactList}\small\item\em Get the last key ascii. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgame_1_1_game_a0c81c6673ff03274c044fa24ffef8b82}\label{classgame_1_1_game_a0c81c6673ff03274c044fa24ffef8b82}} 
+void {\bfseries set\+Callback} (void($\ast$callback)(void))
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classgame_1_1_game}{Game}} $\ast$ \mbox{\hyperlink{classgame_1_1_game_a5f55f8266a41716ef462495091298506}{get\+Engine}} (void)
+\begin{DoxyCompactList}\small\item\em Get the engine. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classgame_1_1_game}{Game}} $\ast$ \mbox{\hyperlink{classgame_1_1_game_aa199548ff839d8665bad22b76ee5af58}{\+\_\+\+\_\+\+E\+N\+G\+I\+N\+E\+\_\+}} (\mbox{\hyperlink{classgame_1_1_game}{Game}} $\ast$game=nullptr)
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{classgame_1_1_entity_manager}{Entity\+Manager}}. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classgame_1_1_game_a4d8d33bbae8e73f459e7bd82deebec28}{collides}} (const sf\+::\+Sprite \&sprite1, const sf\+::\+Sprite \&sprite2)
+\begin{DoxyCompactList}\small\item\em The collides function get collision between two sprites. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgame_1_1_game_ae9a8a06bcaeb4151094c15276e673711}\label{classgame_1_1_game_ae9a8a06bcaeb4151094c15276e673711}} 
+\index{game::Game@{game::Game}!Game@{Game}}
+\index{Game@{Game}!game::Game@{game::Game}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}}
+{\footnotesize\ttfamily game\+::\+Game\+::\+Game (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{title = {\ttfamily \char`\"{}\char`\"{}},  }\item[{const std\+::string \&}]{icon = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classgame_1_1_game}{Game}} engine constructor. 
+
+Create a game engine instance, size of the window is by default the client screen size
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & Title of the window. (e.\+g.\+: \char`\"{}\+Best game\char`\"{}) \\
+\hline
+{\em icon} & Path to the window icon. (e.\+g.\+: \char`\"{}./assets/icon.\+png\char`\"{}) \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classgame_1_1_game_aa199548ff839d8665bad22b76ee5af58}\label{classgame_1_1_game_aa199548ff839d8665bad22b76ee5af58}} 
+\index{game::Game@{game::Game}!\_\_ENGINE\_@{\_\_ENGINE\_}}
+\index{\_\_ENGINE\_@{\_\_ENGINE\_}!game::Game@{game::Game}}
+\doxysubsubsection{\texorpdfstring{\_\_ENGINE\_()}{\_\_ENGINE\_()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classgame_1_1_game}{game\+::\+Game}} $\ast$ game\+::\+Game\+::\+\_\+\+\_\+\+E\+N\+G\+I\+N\+E\+\_\+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classgame_1_1_game}{Game}} $\ast$}]{game = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the \mbox{\hyperlink{classgame_1_1_entity_manager}{Entity\+Manager}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a \textquotesingle{}\mbox{\hyperlink{classgame_1_1_game_aa199548ff839d8665bad22b76ee5af58}{game\+::\+Game\+::\+\_\+\+\_\+\+E\+N\+G\+I\+N\+E\+\_\+}}\textquotesingle{}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgame_1_1_game_a7d3ac8812fb412a3001ed8f5ae4ebe06}\label{classgame_1_1_game_a7d3ac8812fb412a3001ed8f5ae4ebe06}} 
+\index{game::Game@{game::Game}!clear@{clear}}
+\index{clear@{clear}!game::Game@{game::Game}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void game\+::\+Game\+::clear (\begin{DoxyParamCaption}\item[{const sf\+::\+Color \&}]{color = {\ttfamily sf\+:\+:Color\+:\+:Black} }\end{DoxyParamCaption})}
+
+
+
+Clear window with a specified color or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & Takes a sf\+::\+Color argument as a R\+GB color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classgame_1_1_game_a4d8d33bbae8e73f459e7bd82deebec28}\label{classgame_1_1_game_a4d8d33bbae8e73f459e7bd82deebec28}} 
+\index{game::Game@{game::Game}!collides@{collides}}
+\index{collides@{collides}!game::Game@{game::Game}}
+\doxysubsubsection{\texorpdfstring{collides()}{collides()}}
+{\footnotesize\ttfamily bool game\+::\+Game\+::collides (\begin{DoxyParamCaption}\item[{const sf\+::\+Sprite \&}]{sprite1,  }\item[{const sf\+::\+Sprite \&}]{sprite2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The collides function get collision between two sprites. 
+
+\begin{DoxyReturn}{Returns}
+Return booleen which is a true or false state. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgame_1_1_game_aca95638025e1dd8d6e172b5423389793}\label{classgame_1_1_game_aca95638025e1dd8d6e172b5423389793}} 
+\index{game::Game@{game::Game}!componentManager@{componentManager}}
+\index{componentManager@{componentManager}!game::Game@{game::Game}}
+\doxysubsubsection{\texorpdfstring{componentManager()}{componentManager()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classgame_1_1_component_manager}{game\+::\+Component\+Manager}} \& game\+::\+Game\+::component\+Manager (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the \mbox{\hyperlink{classgame_1_1_component_manager}{Component\+Manager}}. 
+
+\begin{DoxyReturn}{Returns}
+a \textquotesingle{}\mbox{\hyperlink{classgame_1_1_component_manager}{game\+::\+Component\+Manager}}\textquotesingle{} type filled with x methods which handle components. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgame_1_1_game_a05b78f42d370b50a427471b1e1fb6788}\label{classgame_1_1_game_a05b78f42d370b50a427471b1e1fb6788}} 
+\index{game::Game@{game::Game}!entityManager@{entityManager}}
+\index{entityManager@{entityManager}!game::Game@{game::Game}}
+\doxysubsubsection{\texorpdfstring{entityManager()}{entityManager()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classgame_1_1_entity_manager}{game\+::\+Entity\+Manager}} \& game\+::\+Game\+::entity\+Manager (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the \mbox{\hyperlink{classgame_1_1_entity_manager}{Entity\+Manager}}. 
+
+\begin{DoxyReturn}{Returns}
+a \textquotesingle{}\mbox{\hyperlink{classgame_1_1_entity_manager}{game\+::\+Entity\+Manager}}\textquotesingle{} type filled with x methods which handle entities. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgame_1_1_game_a5f55f8266a41716ef462495091298506}\label{classgame_1_1_game_a5f55f8266a41716ef462495091298506}} 
+\index{game::Game@{game::Game}!getEngine@{getEngine}}
+\index{getEngine@{getEngine}!game::Game@{game::Game}}
+\doxysubsubsection{\texorpdfstring{getEngine()}{getEngine()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classgame_1_1_game}{game\+::\+Game}} $\ast$ game\+::\+Game\+::get\+Engine (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the engine. 
+
+\begin{DoxyReturn}{Returns}
+a \textquotesingle{}\mbox{\hyperlink{classgame_1_1_game_aa199548ff839d8665bad22b76ee5af58}{game\+::\+Game\+::\+\_\+\+\_\+\+E\+N\+G\+I\+N\+E\+\_\+}}\textquotesingle{}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgame_1_1_game_a9aeeeabfe0b7fc3f274c591b2f12e39a}\label{classgame_1_1_game_a9aeeeabfe0b7fc3f274c591b2f12e39a}} 
+\index{game::Game@{game::Game}!getFramerate@{getFramerate}}
+\index{getFramerate@{getFramerate}!game::Game@{game::Game}}
+\doxysubsubsection{\texorpdfstring{getFramerate()}{getFramerate()}}
+{\footnotesize\ttfamily const game\+::uint8 \& game\+::\+Game\+::get\+Framerate (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Get framerate value as an unsigned 8-\/bit int. 
+
+\begin{DoxyReturn}{Returns}
+8-\/bit unsigned int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgame_1_1_game_a960178f82767fe420465bc1c999cc4bf}\label{classgame_1_1_game_a960178f82767fe420465bc1c999cc4bf}} 
+\index{game::Game@{game::Game}!getIcon@{getIcon}}
+\index{getIcon@{getIcon}!game::Game@{game::Game}}
+\doxysubsubsection{\texorpdfstring{getIcon()}{getIcon()}}
+{\footnotesize\ttfamily const std\+::string \& game\+::\+Game\+::get\+Icon (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Get active icon image path. 
+
+\begin{DoxyReturn}{Returns}
+Path string to the window icon. (e.\+g.\+: \char`\"{}./assets/icon.\+png\char`\"{}) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgame_1_1_game_a845a6a6513fbf10c30bb1143ed6d7ef0}\label{classgame_1_1_game_a845a6a6513fbf10c30bb1143ed6d7ef0}} 
+\index{game::Game@{game::Game}!getKey@{getKey}}
+\index{getKey@{getKey}!game::Game@{game::Game}}
+\doxysubsubsection{\texorpdfstring{getKey()}{getKey()}}
+{\footnotesize\ttfamily bool game\+::\+Game\+::get\+Key (\begin{DoxyParamCaption}\item[{const game\+::int32 \&}]{key }\end{DoxyParamCaption})}
+
+
+
+Get the key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & unicode of the key (A\+S\+C\+II) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a booleen with a true or false state. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgame_1_1_game_a243c45adca5fb4c78f5603085c2fca09}\label{classgame_1_1_game_a243c45adca5fb4c78f5603085c2fca09}} 
+\index{game::Game@{game::Game}!getLastKey@{getLastKey}}
+\index{getLastKey@{getLastKey}!game::Game@{game::Game}}
+\doxysubsubsection{\texorpdfstring{getLastKey()}{getLastKey()}}
+{\footnotesize\ttfamily game\+::int32 game\+::\+Game\+::get\+Last\+Key (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the last key ascii. 
+
+\begin{DoxyReturn}{Returns}
+a \textquotesingle{}game\+::int32\textquotesingle{}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgame_1_1_game_a51dd7396247e0d51f50fbf8acbb4a0df}\label{classgame_1_1_game_a51dd7396247e0d51f50fbf8acbb4a0df}} 
+\index{game::Game@{game::Game}!getLastKeyAscii@{getLastKeyAscii}}
+\index{getLastKeyAscii@{getLastKeyAscii}!game::Game@{game::Game}}
+\doxysubsubsection{\texorpdfstring{getLastKeyAscii()}{getLastKeyAscii()}}
+{\footnotesize\ttfamily game\+::int32 game\+::\+Game\+::get\+Last\+Key\+Ascii (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the last key ascii. 
+
+\begin{DoxyReturn}{Returns}
+a \textquotesingle{}game\+::int32\textquotesingle{}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgame_1_1_game_afc653db1bc836d69806cd508ebea028d}\label{classgame_1_1_game_afc653db1bc836d69806cd508ebea028d}} 
+\index{game::Game@{game::Game}!getMouseClick@{getMouseClick}}
+\index{getMouseClick@{getMouseClick}!game::Game@{game::Game}}
+\doxysubsubsection{\texorpdfstring{getMouseClick()}{getMouseClick()}}
+{\footnotesize\ttfamily bool game\+::\+Game\+::get\+Mouse\+Click (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the mouse click. 
+
+\begin{DoxyReturn}{Returns}
+a \textquotesingle{}bool\textquotesingle{}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgame_1_1_game_a516252afeb6334ebfe2bd28ed7a439c4}\label{classgame_1_1_game_a516252afeb6334ebfe2bd28ed7a439c4}} 
+\index{game::Game@{game::Game}!getMouseClickOnce@{getMouseClickOnce}}
+\index{getMouseClickOnce@{getMouseClickOnce}!game::Game@{game::Game}}
+\doxysubsubsection{\texorpdfstring{getMouseClickOnce()}{getMouseClickOnce()}}
+{\footnotesize\ttfamily bool game\+::\+Game\+::get\+Mouse\+Click\+Once (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the Mouse click. 
+
+\begin{DoxyReturn}{Returns}
+a \textquotesingle{}bool\textquotesingle{}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgame_1_1_game_a26a728b0d67774373f5801d910c97c1b}\label{classgame_1_1_game_a26a728b0d67774373f5801d910c97c1b}} 
+\index{game::Game@{game::Game}!getMusicVolume@{getMusicVolume}}
+\index{getMusicVolume@{getMusicVolume}!game::Game@{game::Game}}
+\doxysubsubsection{\texorpdfstring{getMusicVolume()}{getMusicVolume()}}
+{\footnotesize\ttfamily const game\+::uint8 \& game\+::\+Game\+::get\+Music\+Volume (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Get active music value, which stands for the audio volume. 
+
+\begin{DoxyReturn}{Returns}
+Unisgned 8-\/bit int with a range from 0 to 100\% 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgame_1_1_game_a0212a73b22bde394552287b9e70017c1}\label{classgame_1_1_game_a0212a73b22bde394552287b9e70017c1}} 
+\index{game::Game@{game::Game}!getResolution@{getResolution}}
+\index{getResolution@{getResolution}!game::Game@{game::Game}}
+\doxysubsubsection{\texorpdfstring{getResolution()}{getResolution()}}
+{\footnotesize\ttfamily const sf\+::\+Vector2i \& game\+::\+Game\+::get\+Resolution (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Get window resolution (width-\/height) 
+
+\begin{DoxyReturn}{Returns}
+a \textquotesingle{}\mbox{\hyperlink{structgame_1_1vector2f}{game\+::vector2f}}\textquotesingle{} type filled with x and y sizes. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgame_1_1_game_a4254e74aa633d4ebd7179b0cfe379902}\label{classgame_1_1_game_a4254e74aa633d4ebd7179b0cfe379902}} 
+\index{game::Game@{game::Game}!getSoundVolume@{getSoundVolume}}
+\index{getSoundVolume@{getSoundVolume}!game::Game@{game::Game}}
+\doxysubsubsection{\texorpdfstring{getSoundVolume()}{getSoundVolume()}}
+{\footnotesize\ttfamily const game\+::uint8 \& game\+::\+Game\+::get\+Sound\+Volume (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Get active sound value, which stands for the audio volume. 
+
+\begin{DoxyReturn}{Returns}
+Unisgned 8-\/bit int with a range from 0 to 100\% 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgame_1_1_game_a2cd1155160a9a207023fc7f0108918a5}\label{classgame_1_1_game_a2cd1155160a9a207023fc7f0108918a5}} 
+\index{game::Game@{game::Game}!getTitle@{getTitle}}
+\index{getTitle@{getTitle}!game::Game@{game::Game}}
+\doxysubsubsection{\texorpdfstring{getTitle()}{getTitle()}}
+{\footnotesize\ttfamily const std\+::string \& game\+::\+Game\+::get\+Title (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the active window title/name. 
+
+\begin{DoxyReturn}{Returns}
+String which contains the window title. (e.\+g.\+: \char`\"{}\+R-\/\+Type\char`\"{}) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgame_1_1_game_a7b5c4819b91e4f814b257bef0dc9f3e5}\label{classgame_1_1_game_a7b5c4819b91e4f814b257bef0dc9f3e5}} 
+\index{game::Game@{game::Game}!getWindow@{getWindow}}
+\index{getWindow@{getWindow}!game::Game@{game::Game}}
+\doxysubsubsection{\texorpdfstring{getWindow()}{getWindow()}}
+{\footnotesize\ttfamily sf\+::\+Render\+Window $\ast$ game\+::\+Game\+::get\+Window (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the pointer of the window. 
+
+\begin{DoxyReturn}{Returns}
+a \textquotesingle{}sf\+::\+Render\+Window $\ast$\textquotesingle{} type. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgame_1_1_game_ab17ae8618855a571f455d228921b400d}\label{classgame_1_1_game_ab17ae8618855a571f455d228921b400d}} 
+\index{game::Game@{game::Game}!isClosed@{isClosed}}
+\index{isClosed@{isClosed}!game::Game@{game::Game}}
+\doxysubsubsection{\texorpdfstring{isClosed()}{isClosed()}}
+{\footnotesize\ttfamily const bool \& game\+::\+Game\+::is\+Closed (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Check if the engine window is closed as a boolean value. 
+
+\begin{DoxyReturn}{Returns}
+Boolean 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgame_1_1_game_aba06d48876e6b0763cec16cd08bd45a3}\label{classgame_1_1_game_aba06d48876e6b0763cec16cd08bd45a3}} 
+\index{game::Game@{game::Game}!isFullscreen@{isFullscreen}}
+\index{isFullscreen@{isFullscreen}!game::Game@{game::Game}}
+\doxysubsubsection{\texorpdfstring{isFullscreen()}{isFullscreen()}}
+{\footnotesize\ttfamily const bool \& game\+::\+Game\+::is\+Fullscreen (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Check if the window is windowed or not and return a true or false state. 
+
+\begin{DoxyReturn}{Returns}
+Bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgame_1_1_game_a84b82af320b71ff12447d21bddf2372a}\label{classgame_1_1_game_a84b82af320b71ff12447d21bddf2372a}} 
+\index{game::Game@{game::Game}!isMouseVisible@{isMouseVisible}}
+\index{isMouseVisible@{isMouseVisible}!game::Game@{game::Game}}
+\doxysubsubsection{\texorpdfstring{isMouseVisible()}{isMouseVisible()}}
+{\footnotesize\ttfamily const bool \& game\+::\+Game\+::is\+Mouse\+Visible (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Check if the mouse is visible or not with a boolean type. 
+
+\begin{DoxyReturn}{Returns}
+Bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgame_1_1_game_ac74314502123e5726f0564b4debfa659}\label{classgame_1_1_game_ac74314502123e5726f0564b4debfa659}} 
+\index{game::Game@{game::Game}!loadLibrary@{loadLibrary}}
+\index{loadLibrary@{loadLibrary}!game::Game@{game::Game}}
+\doxysubsubsection{\texorpdfstring{loadLibrary()}{loadLibrary()}}
+{\footnotesize\ttfamily void game\+::\+Game\+::load\+Library (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{lib }\end{DoxyParamCaption})}
+
+
+
+The load\+Library function load the shared libraries given in paramter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lib} & std\+::string which is the name of the shared library. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classgame_1_1_game_ae50724dfe9fd71926fdeda2b3b61d370}\label{classgame_1_1_game_ae50724dfe9fd71926fdeda2b3b61d370}} 
+\index{game::Game@{game::Game}!scene@{scene}}
+\index{scene@{scene}!game::Game@{game::Game}}
+\doxysubsubsection{\texorpdfstring{scene()}{scene()}}
+{\footnotesize\ttfamily void game\+::\+Game\+::scene (\begin{DoxyParamCaption}\item[{void(\&)(void)}]{callback\+\_\+init }\end{DoxyParamCaption})}
+
+
+
+The scene function init any menu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em callback\+\_\+init} & Reference to function whic is a callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classgame_1_1_game_a2f04c908ba219988f07b1182c4153df6}\label{classgame_1_1_game_a2f04c908ba219988f07b1182c4153df6}} 
+\index{game::Game@{game::Game}!setFramerate@{setFramerate}}
+\index{setFramerate@{setFramerate}!game::Game@{game::Game}}
+\doxysubsubsection{\texorpdfstring{setFramerate()}{setFramerate()}}
+{\footnotesize\ttfamily void game\+::\+Game\+::set\+Framerate (\begin{DoxyParamCaption}\item[{const game\+::uint8 \&}]{framerate }\end{DoxyParamCaption})}
+
+
+
+Limit the framerate to a maximum fixed frequency. If a limit is set, the window will use a small delay after each call to display() to ensure that the current frame lasted long enough to match the framerate limit. S\+F\+ML will try to match the given limit as much as it can, but since it internally uses sf\+::sleep, whose precision depends on the underlying OS, the results may be a little unprecise as well (for example, you can get 65 F\+PS when requesting 60). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em volume} & Number x in frames per seconds. (e.\+g.\+: 30) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classgame_1_1_game_ae50e50b5a74803be5cc676d77e088afb}\label{classgame_1_1_game_ae50e50b5a74803be5cc676d77e088afb}} 
+\index{game::Game@{game::Game}!setFullscreen@{setFullscreen}}
+\index{setFullscreen@{setFullscreen}!game::Game@{game::Game}}
+\doxysubsubsection{\texorpdfstring{setFullscreen()}{setFullscreen()}}
+{\footnotesize\ttfamily void game\+::\+Game\+::set\+Fullscreen (\begin{DoxyParamCaption}\item[{const bool \&}]{fullscreen }\end{DoxyParamCaption})}
+
+
+
+Set the screen resolution to fullscreen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fullscreen} & Booleen defined by a true or false state. (e.\+g.\+: True) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classgame_1_1_game_ac05f4dbf06974c271aa8f0e62b56f3a8}\label{classgame_1_1_game_ac05f4dbf06974c271aa8f0e62b56f3a8}} 
+\index{game::Game@{game::Game}!setIcon@{setIcon}}
+\index{setIcon@{setIcon}!game::Game@{game::Game}}
+\doxysubsubsection{\texorpdfstring{setIcon()}{setIcon()}}
+{\footnotesize\ttfamily void game\+::\+Game\+::set\+Icon (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{icon }\end{DoxyParamCaption})}
+
+
+
+Set an icon to the window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em icon} & Path to the window icon. (e.\+g.\+: \char`\"{}./assets/icon.\+png\char`\"{}) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classgame_1_1_game_a81af780fff7dc2908cbd0c0bd1522c39}\label{classgame_1_1_game_a81af780fff7dc2908cbd0c0bd1522c39}} 
+\index{game::Game@{game::Game}!setMouseVisible@{setMouseVisible}}
+\index{setMouseVisible@{setMouseVisible}!game::Game@{game::Game}}
+\doxysubsubsection{\texorpdfstring{setMouseVisible()}{setMouseVisible()}}
+{\footnotesize\ttfamily void game\+::\+Game\+::set\+Mouse\+Visible (\begin{DoxyParamCaption}\item[{const bool \&}]{visible }\end{DoxyParamCaption})}
+
+
+
+Set the mouse visible on the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em visible} & Booleen defined by a true or false state. (e.\+g.\+: True) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classgame_1_1_game_aea03a01725c93386e0268f143642734c}\label{classgame_1_1_game_aea03a01725c93386e0268f143642734c}} 
+\index{game::Game@{game::Game}!setMusicVolume@{setMusicVolume}}
+\index{setMusicVolume@{setMusicVolume}!game::Game@{game::Game}}
+\doxysubsubsection{\texorpdfstring{setMusicVolume()}{setMusicVolume()}}
+{\footnotesize\ttfamily void game\+::\+Game\+::set\+Music\+Volume (\begin{DoxyParamCaption}\item[{const game\+::uint8 \&}]{volume }\end{DoxyParamCaption})}
+
+
+
+Change the music volume. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em volume} & Number x of the volume (x / 100). (e.\+g.\+: 50) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classgame_1_1_game_a80cccbace1f8ef9015cc6dbd91223196}\label{classgame_1_1_game_a80cccbace1f8ef9015cc6dbd91223196}} 
+\index{game::Game@{game::Game}!setResolution@{setResolution}}
+\index{setResolution@{setResolution}!game::Game@{game::Game}}
+\doxysubsubsection{\texorpdfstring{setResolution()}{setResolution()}}
+{\footnotesize\ttfamily void game\+::\+Game\+::set\+Resolution (\begin{DoxyParamCaption}\item[{const sf\+::\+Vector2i \&}]{resolution }\end{DoxyParamCaption})}
+
+
+
+Set window resolution (width-\/height) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em resolution} & Height and width of the window (e.\+g.\+: \{1920, 1080\}) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classgame_1_1_game_af2ea5cfb16408e1cd443c624a7e9faf8}\label{classgame_1_1_game_af2ea5cfb16408e1cd443c624a7e9faf8}} 
+\index{game::Game@{game::Game}!setSoundVolume@{setSoundVolume}}
+\index{setSoundVolume@{setSoundVolume}!game::Game@{game::Game}}
+\doxysubsubsection{\texorpdfstring{setSoundVolume()}{setSoundVolume()}}
+{\footnotesize\ttfamily void game\+::\+Game\+::set\+Sound\+Volume (\begin{DoxyParamCaption}\item[{const game\+::uint8 \&}]{volume }\end{DoxyParamCaption})}
+
+
+
+Change the sound volume. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em volume} & Number x of the volume (x / 100). (e.\+g.\+: 50) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classgame_1_1_game_ad636e3da58096b616670593de403cf44}\label{classgame_1_1_game_ad636e3da58096b616670593de403cf44}} 
+\index{game::Game@{game::Game}!setTitle@{setTitle}}
+\index{setTitle@{setTitle}!game::Game@{game::Game}}
+\doxysubsubsection{\texorpdfstring{setTitle()}{setTitle()}}
+{\footnotesize\ttfamily void game\+::\+Game\+::set\+Title (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{title }\end{DoxyParamCaption})}
+
+
+
+Set a title to the window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & Title of the window. (e.\+g.\+: \char`\"{}\+R-\/\+Type\char`\"{}) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classgame_1_1_game_a201c9b4dd254eb8dc052645fe277968c}\label{classgame_1_1_game_a201c9b4dd254eb8dc052645fe277968c}} 
+\index{game::Game@{game::Game}!systemManager@{systemManager}}
+\index{systemManager@{systemManager}!game::Game@{game::Game}}
+\doxysubsubsection{\texorpdfstring{systemManager()}{systemManager()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classgame_1_1_system_manager}{game\+::\+System\+Manager}} \& game\+::\+Game\+::system\+Manager (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the \mbox{\hyperlink{classgame_1_1_system_manager}{System\+Manager}}. 
+
+\begin{DoxyReturn}{Returns}
+a \textquotesingle{}\mbox{\hyperlink{classgame_1_1_system_manager}{game\+::\+System\+Manager}}\textquotesingle{} type filled with x methods which handle the system. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgame_1_1_game_a23de6ddbec4e7fcf818becd7029f92b1}\label{classgame_1_1_game_a23de6ddbec4e7fcf818becd7029f92b1}} 
+\index{game::Game@{game::Game}!unloadLibrary@{unloadLibrary}}
+\index{unloadLibrary@{unloadLibrary}!game::Game@{game::Game}}
+\doxysubsubsection{\texorpdfstring{unloadLibrary()}{unloadLibrary()}}
+{\footnotesize\ttfamily void game\+::\+Game\+::unload\+Library (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{lib }\end{DoxyParamCaption})}
+
+
+
+The unload\+Library function unload the shared libraries given in paramter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lib} & std\+::string which is the name of the shared library. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+client/engine/include/game/Game.\+hpp\item 
+client/engine/src/game/Game.\+cpp\end{DoxyCompactItemize}

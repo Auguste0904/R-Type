@@ -1,0 +1,131 @@
+\hypertarget{classgame_1_1_entity_manager}{}\doxysection{game\+::Entity\+Manager Class Reference}
+\label{classgame_1_1_entity_manager}\index{game::EntityManager@{game::EntityManager}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgame_1_1_entity_manager_ac9c0318d1b63fe3106b26d05c3abde8e}{Entity\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classgame_1_1_entity_manager}{Entity\+Manager}} is the constructor. \end{DoxyCompactList}\item 
+game\+::int32 \mbox{\hyperlink{classgame_1_1_entity_manager_aafcba9cf2a60932c4972c6810af97cee}{add\+Entity}} (void)
+\begin{DoxyCompactList}\small\item\em The add\+Entity function. \end{DoxyCompactList}\item 
+game\+::int32 \mbox{\hyperlink{classgame_1_1_entity_manager_afb727857280a67283bf4b4f9f7deb199}{add\+Entity}} (const game\+::int32 \&id)
+\begin{DoxyCompactList}\small\item\em The add\+Entity function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgame_1_1_entity_manager_a6759be336000f0c08173c4d0f5b94406}{remove\+Entity}} (const game\+::int32 \&id)
+\begin{DoxyCompactList}\small\item\em The remove\+Entity function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgame_1_1_entity_manager_a757915626313d744ca3629ec2cab9f94}{\+\_\+\+R\+E\+M\+O\+V\+E\+\_\+\+E\+N\+T\+I\+TY}} (const game\+::int32 \&id)
+\begin{DoxyCompactList}\small\item\em N\+OT M\+E\+A\+NT TO BE U\+S\+ED BY G\+A\+ME D\+E\+V\+E\+L\+O\+P\+ER. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgame_1_1_entity_manager_ad6cd493a8adebde3a6a606dcdfb0d270}{clear}} (void)
+\begin{DoxyCompactList}\small\item\em The clear function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgame_1_1_entity_manager_a53f6b6a670af42e07f8d803860d8bb81}{\+\_\+\+C\+L\+E\+AR}} (void)
+\begin{DoxyCompactList}\small\item\em N\+OT M\+E\+A\+NT TO BE U\+S\+ED BY G\+A\+ME D\+E\+V\+E\+L\+O\+P\+ER ! \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgame_1_1_entity_manager_a02114971e1fa012c255e1a3b44d2aeb6}\label{classgame_1_1_entity_manager_a02114971e1fa012c255e1a3b44d2aeb6}} 
+std\+::vector$<$ game\+::int32 $>$ {\bfseries \+\_\+entity\+List}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgame_1_1_entity_manager_ac9c0318d1b63fe3106b26d05c3abde8e}\label{classgame_1_1_entity_manager_ac9c0318d1b63fe3106b26d05c3abde8e}} 
+\index{game::EntityManager@{game::EntityManager}!EntityManager@{EntityManager}}
+\index{EntityManager@{EntityManager}!game::EntityManager@{game::EntityManager}}
+\doxysubsubsection{\texorpdfstring{EntityManager()}{EntityManager()}}
+{\footnotesize\ttfamily game\+::\+Entity\+Manager\+::\+Entity\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classgame_1_1_entity_manager}{Entity\+Manager}} is the constructor. 
+
+It initializes a list of entities. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classgame_1_1_entity_manager_a53f6b6a670af42e07f8d803860d8bb81}\label{classgame_1_1_entity_manager_a53f6b6a670af42e07f8d803860d8bb81}} 
+\index{game::EntityManager@{game::EntityManager}!\_CLEAR@{\_CLEAR}}
+\index{\_CLEAR@{\_CLEAR}!game::EntityManager@{game::EntityManager}}
+\doxysubsubsection{\texorpdfstring{\_CLEAR()}{\_CLEAR()}}
+{\footnotesize\ttfamily void game\+::\+Entity\+Manager\+::\+\_\+\+C\+L\+E\+AR (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+N\+OT M\+E\+A\+NT TO BE U\+S\+ED BY G\+A\+ME D\+E\+V\+E\+L\+O\+P\+ER ! 
+
+Clear all entities of the entity list.
+
+\begin{DoxyReturn}{Returns}
+Return a stactic number which is id of an entity. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgame_1_1_entity_manager_a757915626313d744ca3629ec2cab9f94}\label{classgame_1_1_entity_manager_a757915626313d744ca3629ec2cab9f94}} 
+\index{game::EntityManager@{game::EntityManager}!\_REMOVE\_ENTITY@{\_REMOVE\_ENTITY}}
+\index{\_REMOVE\_ENTITY@{\_REMOVE\_ENTITY}!game::EntityManager@{game::EntityManager}}
+\doxysubsubsection{\texorpdfstring{\_REMOVE\_ENTITY()}{\_REMOVE\_ENTITY()}}
+{\footnotesize\ttfamily void game\+::\+Entity\+Manager\+::\+\_\+\+R\+E\+M\+O\+V\+E\+\_\+\+E\+N\+T\+I\+TY (\begin{DoxyParamCaption}\item[{const game\+::int32 \&}]{id }\end{DoxyParamCaption})}
+
+
+
+N\+OT M\+E\+A\+NT TO BE U\+S\+ED BY G\+A\+ME D\+E\+V\+E\+L\+O\+P\+ER. 
+
+Remove an entity from list without calling remove from \mbox{\hyperlink{classgame_1_1_component_manager}{Component\+Manager}}, \mbox{\hyperlink{classgame_1_1_system_manager}{System\+Manager}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & id to be removed from the list \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classgame_1_1_entity_manager_afb727857280a67283bf4b4f9f7deb199}\label{classgame_1_1_entity_manager_afb727857280a67283bf4b4f9f7deb199}} 
+\index{game::EntityManager@{game::EntityManager}!addEntity@{addEntity}}
+\index{addEntity@{addEntity}!game::EntityManager@{game::EntityManager}}
+\doxysubsubsection{\texorpdfstring{addEntity()}{addEntity()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily game\+::int32 game\+::\+Entity\+Manager\+::add\+Entity (\begin{DoxyParamCaption}\item[{const game\+::int32 \&}]{id }\end{DoxyParamCaption})}
+
+
+
+The add\+Entity function. 
+
+add a defined entity id to the list. \mbox{\Hypertarget{classgame_1_1_entity_manager_aafcba9cf2a60932c4972c6810af97cee}\label{classgame_1_1_entity_manager_aafcba9cf2a60932c4972c6810af97cee}} 
+\index{game::EntityManager@{game::EntityManager}!addEntity@{addEntity}}
+\index{addEntity@{addEntity}!game::EntityManager@{game::EntityManager}}
+\doxysubsubsection{\texorpdfstring{addEntity()}{addEntity()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily game\+::int32 game\+::\+Entity\+Manager\+::add\+Entity (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+The add\+Entity function. 
+
+add an entity to the list. \mbox{\Hypertarget{classgame_1_1_entity_manager_ad6cd493a8adebde3a6a606dcdfb0d270}\label{classgame_1_1_entity_manager_ad6cd493a8adebde3a6a606dcdfb0d270}} 
+\index{game::EntityManager@{game::EntityManager}!clear@{clear}}
+\index{clear@{clear}!game::EntityManager@{game::EntityManager}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void game\+::\+Entity\+Manager\+::clear (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+The clear function. 
+
+clear all entities of the entity list.
+
+\begin{DoxyReturn}{Returns}
+Return a stactic number which is id of an entity. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgame_1_1_entity_manager_a6759be336000f0c08173c4d0f5b94406}\label{classgame_1_1_entity_manager_a6759be336000f0c08173c4d0f5b94406}} 
+\index{game::EntityManager@{game::EntityManager}!removeEntity@{removeEntity}}
+\index{removeEntity@{removeEntity}!game::EntityManager@{game::EntityManager}}
+\doxysubsubsection{\texorpdfstring{removeEntity()}{removeEntity()}}
+{\footnotesize\ttfamily void game\+::\+Entity\+Manager\+::remove\+Entity (\begin{DoxyParamCaption}\item[{const game\+::int32 \&}]{id }\end{DoxyParamCaption})}
+
+
+
+The remove\+Entity function. 
+
+remove an entity from the engine
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & id to be removed from the list \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+client/engine/include/ecs/entity/Entity\+Manager.\+hpp\item 
+client/engine/src/ecs/entity/Entity\+Manager.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,8 @@
+.DS_Store
+build
+r-type_client
+r-type_server
+.vscode
+.clangd
+compile_commands.json
+lib

@@ -1,0 +1,75 @@
+RFC 2223         R-Type Protocol              Nov 2020
+            
+                 R-Type Protocol            
+
+Status of this Memo
+
+    This memo provides informations about our R-Type
+    project carried out as part of our Epitech 
+    course. Distribution of this memo is unlimited.
+
+Copyright Notice
+
+    All Rights Reserved.
+
+Table of Contents
+
+1.  Introduction . . . . . . . . . . . . . . . . . 2
+2.  Run the project . . . . . . . . . . . . . . . .3
+3.  Controls . . . . . . . . . . . . . . . . . . . 3
+4.  Protocol . . . . . . . . . . . . . . . . . . . 4
+
+
+                  Informational               [page 1]
+
+RFC 2223         R-Type Protocol              Nov 2020
+
+1.  Introduction
+
+    This request for Comments (RFC) provides 
+    information about our R-Type project developed
+    as part of our schooling at Epitech. 
+
+    The objective of this project is to create an 
+    R-Type conforming to the original born in 1987
+    on an arcade terminal. It is a series of 
+    two-dimentional video games emblematic of the 
+    horizontal scrolling shoot them up, developed by
+    Irem.
+
+    This video game is coded in C++ whith the sfml
+    as graphics library.
+
+                  Informational               [page 2]
+
+RFC 2223         R-Type Protocol              Nov 2020
+
+2. Run the project
+
+    To start the project, type the command :
+        - make add_remotes && make install && make
+
+3. Controls
+
+    - Z     : move up
+    - S     : move down
+    - Q     : move left
+    - D     : move right
+    - SPACE : shoot
+
+
+                  Informational               [page 3]
+
+RFC 2223         R-Type Protocol              Nov 2020
+
+4. Protocol
+
+
+
+                  Informational               [page 4]
+
+RFC 2223         R-Type Protocol              Nov 2020
+
+
+
+                  Informational               [page 5]

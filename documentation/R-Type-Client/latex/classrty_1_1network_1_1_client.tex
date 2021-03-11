@@ -1,0 +1,111 @@
+\hypertarget{classrty_1_1network_1_1_client}{}\doxysection{rty\+::network\+::Client Class Reference}
+\label{classrty_1_1network_1_1_client}\index{rty::network::Client@{rty::network::Client}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrty_1_1network_1_1_client_a27e42204078a983250f7963489490926}\label{classrty_1_1network_1_1_client_a27e42204078a983250f7963489490926}} 
+void {\bfseries init} (int port, const std\+::string \&server\+IP=\char`\"{}127.\+0.\+0.\+1\char`\"{})
+\item 
+void \mbox{\hyperlink{classrty_1_1network_1_1_client_ae06d50cb9ebc263e598acf54729e5175}{disconnect}} (const int id)
+\begin{DoxyCompactList}\small\item\em send disconnection order to the server \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classrty_1_1network_1_1_client_a27056ba07f9c35abc9f9ac520237af45}{get\+Lobby\+Data}} ()
+\begin{DoxyCompactList}\small\item\em get information on the inprogress lobby \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classrty_1_1network_1_1_client_a24d9a61b686550aed94282ff1b196191}{recv\+Str}} (const int size)
+\begin{DoxyCompactList}\small\item\em recieve a string of given size from server \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classrty_1_1network_1_1_client_abacc92b4d170da5c3c112f8fa4fa7e54}\label{classrty_1_1network_1_1_client_abacc92b4d170da5c3c112f8fa4fa7e54}} 
+boost\+::optional$<$ boost\+::system\+::error\+\_\+code $>$ {\bfseries recv\+Until\+Timeout} (U\+D\+P\+Endpoint \&remote\+Endpoint, boost\+::array$<$ char, 20001 $>$ \&recv\+Buf, int seconds)
+\item 
+int \mbox{\hyperlink{classrty_1_1network_1_1_client_abaecbae3d05e4d1121990a2de461dfca}{get\+Port}} () const noexcept
+\begin{DoxyCompactList}\small\item\em get the port of the remote or local server \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classrty_1_1network_1_1_client_ac218c0dfdeb0fa3a6ff37c8df13949b0}\label{classrty_1_1network_1_1_client_ac218c0dfdeb0fa3a6ff37c8df13949b0}} 
+void \mbox{\hyperlink{classrty_1_1network_1_1_client_ac218c0dfdeb0fa3a6ff37c8df13949b0}{close}} () noexcept
+\begin{DoxyCompactList}\small\item\em manually close socket \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classrty_1_1network_1_1_client_a6376c3d64129085bdb7b17c9bc9b0a63}{connect}} ()
+\begin{DoxyCompactList}\small\item\em connect network client to server with connect command \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classrty_1_1network_1_1_client_a66f4cc08d888ccf3b0c3819dca74f5a8}\label{classrty_1_1network_1_1_client_a66f4cc08d888ccf3b0c3819dca74f5a8}} 
+void {\bfseries disobserve} (const int id)
+\item 
+\mbox{\Hypertarget{classrty_1_1network_1_1_client_ad6f4fb71588195f468a56c5cd2fa9793}\label{classrty_1_1network_1_1_client_ad6f4fb71588195f468a56c5cd2fa9793}} 
+void {\bfseries send\+Str} (const std\+::string \&s)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classrty_1_1network_1_1_client_a6376c3d64129085bdb7b17c9bc9b0a63}\label{classrty_1_1network_1_1_client_a6376c3d64129085bdb7b17c9bc9b0a63}} 
+\index{rty::network::Client@{rty::network::Client}!connect@{connect}}
+\index{connect@{connect}!rty::network::Client@{rty::network::Client}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily void rty\+::network\+::\+Client\+::connect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+connect network client to server with connect command 
+
+\begin{DoxyReturn}{Returns}
+id -\/1 if error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrty_1_1network_1_1_client_ae06d50cb9ebc263e598acf54729e5175}\label{classrty_1_1network_1_1_client_ae06d50cb9ebc263e598acf54729e5175}} 
+\index{rty::network::Client@{rty::network::Client}!disconnect@{disconnect}}
+\index{disconnect@{disconnect}!rty::network::Client@{rty::network::Client}}
+\doxysubsubsection{\texorpdfstring{disconnect()}{disconnect()}}
+{\footnotesize\ttfamily void rty\+::network\+::\+Client\+::disconnect (\begin{DoxyParamCaption}\item[{const int}]{id }\end{DoxyParamCaption})}
+
+
+
+send disconnection order to the server 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & id of the player to diconnect \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrty_1_1network_1_1_client_a27056ba07f9c35abc9f9ac520237af45}\label{classrty_1_1network_1_1_client_a27056ba07f9c35abc9f9ac520237af45}} 
+\index{rty::network::Client@{rty::network::Client}!getLobbyData@{getLobbyData}}
+\index{getLobbyData@{getLobbyData}!rty::network::Client@{rty::network::Client}}
+\doxysubsubsection{\texorpdfstring{getLobbyData()}{getLobbyData()}}
+{\footnotesize\ttfamily std\+::string rty\+::network\+::\+Client\+::get\+Lobby\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get information on the inprogress lobby 
+
+\begin{DoxyReturn}{Returns}
+the received string, cf doc to see the instructions list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrty_1_1network_1_1_client_abaecbae3d05e4d1121990a2de461dfca}\label{classrty_1_1network_1_1_client_abaecbae3d05e4d1121990a2de461dfca}} 
+\index{rty::network::Client@{rty::network::Client}!getPort@{getPort}}
+\index{getPort@{getPort}!rty::network::Client@{rty::network::Client}}
+\doxysubsubsection{\texorpdfstring{getPort()}{getPort()}}
+{\footnotesize\ttfamily int rty\+::network\+::\+Client\+::get\+Port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+get the port of the remote or local server 
+
+\begin{DoxyReturn}{Returns}
+port as int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrty_1_1network_1_1_client_a24d9a61b686550aed94282ff1b196191}\label{classrty_1_1network_1_1_client_a24d9a61b686550aed94282ff1b196191}} 
+\index{rty::network::Client@{rty::network::Client}!recvStr@{recvStr}}
+\index{recvStr@{recvStr}!rty::network::Client@{rty::network::Client}}
+\doxysubsubsection{\texorpdfstring{recvStr()}{recvStr()}}
+{\footnotesize\ttfamily std\+::string rty\+::network\+::\+Client\+::recv\+Str (\begin{DoxyParamCaption}\item[{const int}]{size }\end{DoxyParamCaption})}
+
+
+
+recieve a string of given size from server 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & size of the string to receive in bytes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string the received string 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+client/\+U\+D\+P\+Client/U\+D\+P\+Client.\+hpp\item 
+client/\+U\+D\+P\+Client/U\+D\+P\+Client.\+cpp\end{DoxyCompactItemize}

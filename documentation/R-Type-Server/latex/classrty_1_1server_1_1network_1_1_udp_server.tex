@@ -1,0 +1,56 @@
+\hypertarget{classrty_1_1server_1_1network_1_1_udp_server}{}\doxysection{rty\+::server\+::network\+::Udp\+Server Class Reference}
+\label{classrty_1_1server_1_1network_1_1_udp_server}\index{rty::server::network::UdpServer@{rty::server::network::UdpServer}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrty_1_1server_1_1network_1_1_udp_server_af1456516f7979a9f49a0111692b75798}\label{classrty_1_1server_1_1network_1_1_udp_server_af1456516f7979a9f49a0111692b75798}} 
+{\bfseries Udp\+Server} (const int port)
+\item 
+\mbox{\Hypertarget{classrty_1_1server_1_1network_1_1_udp_server_a668291374974c0ff2ccd9d71b74fb755}\label{classrty_1_1server_1_1network_1_1_udp_server_a668291374974c0ff2ccd9d71b74fb755}} 
+int {\bfseries wait\+For\+Clients} ()
+\item 
+\mbox{\Hypertarget{classrty_1_1server_1_1network_1_1_udp_server_ae5f2340a6cb036f104995fce2967550d}\label{classrty_1_1server_1_1network_1_1_udp_server_ae5f2340a6cb036f104995fce2967550d}} 
+void {\bfseries connect\+Client} (const boost\+::asio\+::ip\+::udp\+::endpoint \&endpoint)
+\item 
+\mbox{\Hypertarget{classrty_1_1server_1_1network_1_1_udp_server_ab375c7a6516bb5d74225a99d6c9ae442}\label{classrty_1_1server_1_1network_1_1_udp_server_ab375c7a6516bb5d74225a99d6c9ae442}} 
+void {\bfseries disconnect\+Client} (char id)
+\item 
+\mbox{\Hypertarget{classrty_1_1server_1_1network_1_1_udp_server_aba20587169b63a89f464965f6858625f}\label{classrty_1_1server_1_1network_1_1_udp_server_aba20587169b63a89f464965f6858625f}} 
+void {\bfseries read\+Command} (const boost\+::asio\+::ip\+::udp\+::endpoint \&endpoint, const std\+::string \&cmd)
+\item 
+\mbox{\Hypertarget{classrty_1_1server_1_1network_1_1_udp_server_a8398395815db01c602dcb3919b147ff0}\label{classrty_1_1server_1_1network_1_1_udp_server_a8398395815db01c602dcb3919b147ff0}} 
+void {\bfseries send} (const boost\+::asio\+::ip\+::udp\+::endpoint \&endpoint, const std\+::string \&msg)
+\item 
+\mbox{\Hypertarget{classrty_1_1server_1_1network_1_1_udp_server_afc449123cbc572ae8c07fbb8bfef5f94}\label{classrty_1_1server_1_1network_1_1_udp_server_afc449123cbc572ae8c07fbb8bfef5f94}} 
+void {\bfseries send} (char id, const std\+::string \&msg)
+\item 
+\mbox{\Hypertarget{classrty_1_1server_1_1network_1_1_udp_server_a464320d0b8aad817237666fe617dbbb2}\label{classrty_1_1server_1_1network_1_1_udp_server_a464320d0b8aad817237666fe617dbbb2}} 
+void {\bfseries send\+All} (const std\+::string \&msg)
+\item 
+\mbox{\Hypertarget{classrty_1_1server_1_1network_1_1_udp_server_aac87f9584aa79de06f40441c991b3178}\label{classrty_1_1server_1_1network_1_1_udp_server_aac87f9584aa79de06f40441c991b3178}} 
+void {\bfseries send\+Starting\+Game} ()
+\item 
+\mbox{\Hypertarget{classrty_1_1server_1_1network_1_1_udp_server_a2fb4ed84b3f81073bf5f7d4e48e8ba85}\label{classrty_1_1server_1_1network_1_1_udp_server_a2fb4ed84b3f81073bf5f7d4e48e8ba85}} 
+void {\bfseries send\+Lobby\+Info} (int t)
+\item 
+\mbox{\Hypertarget{classrty_1_1server_1_1network_1_1_udp_server_aa7ffb7d14ded3a73665a11a9bb31de21}\label{classrty_1_1server_1_1network_1_1_udp_server_aa7ffb7d14ded3a73665a11a9bb31de21}} 
+std\+::string {\bfseries read\+All} ()
+\item 
+\mbox{\Hypertarget{classrty_1_1server_1_1network_1_1_udp_server_aef869af5d2e4d11bc0b2b46741b89a35}\label{classrty_1_1server_1_1network_1_1_udp_server_aef869af5d2e4d11bc0b2b46741b89a35}} 
+boost\+::optional$<$ boost\+::system\+::error\+\_\+code $>$ {\bfseries recv\+Until\+Timeout} (U\+D\+P\+Endpoint \&remote\+Endpoint, boost\+::array$<$ char, 4096 $>$ \&recv\+Buf, int seconds)
+\item 
+\mbox{\Hypertarget{classrty_1_1server_1_1network_1_1_udp_server_a0f82c1461c2f234212c5487d74b52d74}\label{classrty_1_1server_1_1network_1_1_udp_server_a0f82c1461c2f234212c5487d74b52d74}} 
+bool {\bfseries verif\+ID} (const boost\+::asio\+::ip\+::udp\+::endpoint \&endpoint, const char id)
+\item 
+\mbox{\Hypertarget{classrty_1_1server_1_1network_1_1_udp_server_a59e40149c595e22c87dc8c3f0399b8d2}\label{classrty_1_1server_1_1network_1_1_udp_server_a59e40149c595e22c87dc8c3f0399b8d2}} 
+Server\+Player {\bfseries get\+Players} () const noexcept
+\item 
+\mbox{\Hypertarget{classrty_1_1server_1_1network_1_1_udp_server_aea4566c40737a16100d13eb87747fd57}\label{classrty_1_1server_1_1network_1_1_udp_server_aea4566c40737a16100d13eb87747fd57}} 
+void {\bfseries start} ()
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+server/src/\+U\+D\+P\+Server/U\+D\+P\+Server.\+hpp\item 
+server/src/\+U\+D\+P\+Server/U\+D\+P\+Server.\+cpp\end{DoxyCompactItemize}

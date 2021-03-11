@@ -1,0 +1,97 @@
+\hypertarget{classgame_1_1_exception}{}\doxysection{game\+::Exception Class Reference}
+\label{classgame_1_1_exception}\index{game::Exception@{game::Exception}}
+
+
+Inheritance diagram for game\+::Exception\+:
+% FIG 0
+
+
+Collaboration diagram for game\+::Exception\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgame_1_1_exception_a8615f8cdf5df5cd84874166ebdf94d23}{Exception}} (const std\+::string \&message, const game\+::int32 \&return\+Value)  throw ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classgame_1_1_game}{Game}} exception constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classgame_1_1_exception_abbfdeea4cd9e604455844b164a661444}{Exception}} ()  throw ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classgame_1_1_game}{Game}} exception constructor. \end{DoxyCompactList}\item 
+virtual const char $\ast$ \mbox{\hyperlink{classgame_1_1_exception_aebebe0cc05c000290fd68467ac53b9dc}{what}} () const  throw ()
+\begin{DoxyCompactList}\small\item\em Get the exception message. \end{DoxyCompactList}\item 
+game\+::int32 \mbox{\hyperlink{classgame_1_1_exception_a310c54ba2edf2fecda6d23600ccbafd4}{get\+Return\+Value}} (void)
+\begin{DoxyCompactList}\small\item\em Get the return value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgame_1_1_exception_a2dfb8a46648cfa7b66a305c098d12ef2}\label{classgame_1_1_exception_a2dfb8a46648cfa7b66a305c098d12ef2}} 
+std\+::string {\bfseries \+\_\+message} = \char`\"{}An error occured\char`\"{}
+\item 
+\mbox{\Hypertarget{classgame_1_1_exception_a8328fe470be49b179c0b5d9f6ce16dd1}\label{classgame_1_1_exception_a8328fe470be49b179c0b5d9f6ce16dd1}} 
+game\+::int32 {\bfseries \+\_\+return\+Value} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgame_1_1_exception_a8615f8cdf5df5cd84874166ebdf94d23}\label{classgame_1_1_exception_a8615f8cdf5df5cd84874166ebdf94d23}} 
+\index{game::Exception@{game::Exception}!Exception@{Exception}}
+\index{Exception@{Exception}!game::Exception@{game::Exception}}
+\doxysubsubsection{\texorpdfstring{Exception()}{Exception()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily game\+::\+Exception\+::\+Exception (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{message,  }\item[{const game\+::int32 \&}]{return\+Value }\end{DoxyParamCaption}) throw ( ) }
+
+
+
+\mbox{\hyperlink{classgame_1_1_game}{Game}} exception constructor. 
+
+Create a game exception instance
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & Error message \\
+\hline
+{\em return\+Value} & return number \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classgame_1_1_exception_abbfdeea4cd9e604455844b164a661444}\label{classgame_1_1_exception_abbfdeea4cd9e604455844b164a661444}} 
+\index{game::Exception@{game::Exception}!Exception@{Exception}}
+\index{Exception@{Exception}!game::Exception@{game::Exception}}
+\doxysubsubsection{\texorpdfstring{Exception()}{Exception()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily game\+::\+Exception\+::\+Exception (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throw ( ) }
+
+
+
+\mbox{\hyperlink{classgame_1_1_game}{Game}} exception constructor. 
+
+Create a game exception instance 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classgame_1_1_exception_a310c54ba2edf2fecda6d23600ccbafd4}\label{classgame_1_1_exception_a310c54ba2edf2fecda6d23600ccbafd4}} 
+\index{game::Exception@{game::Exception}!getReturnValue@{getReturnValue}}
+\index{getReturnValue@{getReturnValue}!game::Exception@{game::Exception}}
+\doxysubsubsection{\texorpdfstring{getReturnValue()}{getReturnValue()}}
+{\footnotesize\ttfamily game\+::int32 game\+::\+Exception\+::get\+Return\+Value (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the return value. 
+
+\begin{DoxyReturn}{Returns}
+a \textquotesingle{}game\+::int32\textquotesingle{}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgame_1_1_exception_aebebe0cc05c000290fd68467ac53b9dc}\label{classgame_1_1_exception_aebebe0cc05c000290fd68467ac53b9dc}} 
+\index{game::Exception@{game::Exception}!what@{what}}
+\index{what@{what}!game::Exception@{game::Exception}}
+\doxysubsubsection{\texorpdfstring{what()}{what()}}
+{\footnotesize\ttfamily const char $\ast$ game\+::\+Exception\+::what (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const throw ( ) \hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the exception message. 
+
+\begin{DoxyReturn}{Returns}
+a \textquotesingle{}const char $\ast$\textquotesingle{}. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+client/engine/include/exception/Exception.\+hpp\item 
+client/engine/src/exception/Exception.\+cpp\end{DoxyCompactItemize}

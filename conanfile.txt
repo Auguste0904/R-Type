@@ -1,0 +1,6 @@
+[requires]
+boost_bind/1.69.0@bincrafters/stable
+boost_asio/1.69.0@bincrafters/stable
+
+[generators]
+cmake
